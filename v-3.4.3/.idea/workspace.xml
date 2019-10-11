@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="70c0be67-ca4d-47c1-bab0-d6437319fed4" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="v-3.4.3" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>ran</find>
+    </findStrings>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="180" />
+    <option name="y" value="132" />
+    <option name="width" value="1080" />
+    <option name="height" value="659" />
+  </component>
+  <component name="ProjectId" id="1S35CcHJaOEVQnAAfXSGQzYLxOh" />
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/AtCoderBeginnerContest" />
+      <recent name="$PROJECT_DIR$/ABC-A&lt;139" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration>$USER_HOME$/.subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="70c0be67-ca4d-47c1-bab0-d6437319fed4" name="Default Changelist" comment="" />
+      <created>1566704256151</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1566704256151</updated>
+      <workItem from="1566704258178" duration="784000" />
+      <workItem from="1566709853333" duration="84000" />
+      <workItem from="1566709940134" duration="15055000" />
+      <workItem from="1566794825618" duration="1420000" />
+      <workItem from="1566828865060" duration="3133000" />
+      <workItem from="1566879927955" duration="1214000" />
+      <workItem from="1567067156696" duration="472000" />
+      <workItem from="1567395303232" duration="193000" />
+      <workItem from="1567407357927" duration="2007000" />
+      <workItem from="1567410596797" duration="2331000" />
+      <workItem from="1568106448653" duration="328000" />
+      <workItem from="1568346748636" duration="278000" />
+      <workItem from="1568548022537" duration="6186000" />
+      <workItem from="1568622108245" duration="432000" />
+      <workItem from="1568636583766" duration="75000" />
+      <workItem from="1570077985452" duration="4000" />
+      <workItem from="1570371954379" duration="432000" />
+      <workItem from="1570416314732" duration="17000" />
+      <workItem from="1570779313311" duration="344000" />
+      <workItem from="1570797254985" duration="385000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ScopeChooserConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
