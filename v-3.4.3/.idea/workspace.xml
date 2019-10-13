@@ -23,12 +23,6 @@
       <find>ran</find>
     </findStrings>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="180" />
-    <option name="y" value="132" />
-    <option name="width" value="1080" />
-    <option name="height" value="659" />
-  </component>
   <component name="ProjectId" id="1S35CcHJaOEVQnAAfXSGQzYLxOh" />
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -88,7 +82,7 @@
       <workItem from="1570371954379" duration="432000" />
       <workItem from="1570416314732" duration="17000" />
       <workItem from="1570779313311" duration="344000" />
-      <workItem from="1570797254985" duration="385000" />
+      <workItem from="1570797254985" duration="1666000" />
     </task>
     <servers />
   </component>
