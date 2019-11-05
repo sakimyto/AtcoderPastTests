@@ -2,23 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70c0be67-ca4d-47c1-bab0-d6437319fed4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC001A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC002A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC003A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC004A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC005A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC006A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC007A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC008A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC009A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC010A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC011A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC012A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC013A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC014A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC015A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC016A.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC017A.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC115B.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC116B.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -112,7 +97,7 @@
       <workItem from="1572778464089" duration="1628000" />
       <workItem from="1572827037092" duration="3000" />
       <workItem from="1572855124753" duration="3000" />
-      <workItem from="1572877197191" duration="1908000" />
+      <workItem from="1572877197191" duration="2860000" />
     </task>
     <servers />
   </component>
