@@ -2,8 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70c0be67-ca4d-47c1-bab0-d6437319fed4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC115B.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC116B.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC110B.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC111B.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC112B.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC113B.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC114B.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC142C.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC143C.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC144C.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,14 +47,14 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$/AtCoderBeginnerContest" />
-      <recent name="$PROJECT_DIR$" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/AtCoderBeginnerContest" />
       <recent name="$PROJECT_DIR$/ABC-A&lt;139" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/AtCoderBeginnerContest" />
+      <recent name="$PROJECT_DIR$" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -97,7 +103,8 @@
       <workItem from="1572778464089" duration="1628000" />
       <workItem from="1572827037092" duration="3000" />
       <workItem from="1572855124753" duration="3000" />
-      <workItem from="1572877197191" duration="2860000" />
+      <workItem from="1572877197191" duration="4244000" />
+      <workItem from="1572958013402" duration="4285000" />
     </task>
     <servers />
   </component>
