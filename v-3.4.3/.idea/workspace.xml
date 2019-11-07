@@ -2,15 +2,81 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70c0be67-ca4d-47c1-bab0-d6437319fed4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC110B.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC111B.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC112B.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC113B.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC114B.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC142C.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC143C.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC144C.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ABC-B/ABC107B.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ABC-B/ABC108B.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ABC-B/ABC109B.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ABC-D/ABC141D.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/monos.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC001A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC001A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC002A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC002A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC003A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC003A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC004A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC004A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC005A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC005A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC006A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC006A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC007A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC007A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC008A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC008A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC009A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC009A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC010A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC010A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC011A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC011A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC012A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC012A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC013A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC013A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC014A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC014A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC015A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC015A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC016A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC016A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC017A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC017A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC110A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC110A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC110B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC110B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC111B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC111B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC112B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC112B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC113B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC113B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC114B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC114B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC115B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC115B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC116B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC116B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC117B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC117B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC118B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC118B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC120A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC120A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC121A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC121A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC122A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC122A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC123A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC123A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC124A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC124A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC125A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC125A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC126A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC126A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC127A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC127A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC128A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC128A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC129A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC129A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC130A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC130A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC131A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC131A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC133A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC133A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC134A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC134A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC134B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC134B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC135A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC135A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC135B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC135B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC136A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC136A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC136B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC136B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC137A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC137A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC137B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC137B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC137C.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-C/ABC137C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC138A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC138A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC138B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC138B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC138C.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-C/ABC138C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC138D.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-D/ABC138D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC139A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC139A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC139B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC139B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC139C.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-C/ABC139C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC140B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC140B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC141A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC141A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC141B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC141B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC141C.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-C/ABC141C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC141D.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-C/ABC140C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC142B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC142B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC142C.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-C/ABC142C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC143A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC143A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC143B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC143B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC143C.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-C/ABC143C.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC144A.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-A/ABC144A.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC144B.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-B/ABC144B.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/AtCoderBeginnerContest/ABC144C.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-C/ABC144C.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,11 +94,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>ran</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
@@ -47,14 +108,16 @@
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/AtCoderBeginnerContest" />
-      <recent name="$PROJECT_DIR$/ABC-A&lt;139" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/AtCoderBeginnerContest" />
       <recent name="$PROJECT_DIR$" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ABC-D" />
+      <recent name="$PROJECT_DIR$/ABC-C" />
+      <recent name="$PROJECT_DIR$/ABC-A" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/AtCoderBeginnerContest" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -104,7 +167,10 @@
       <workItem from="1572827037092" duration="3000" />
       <workItem from="1572855124753" duration="3000" />
       <workItem from="1572877197191" duration="4244000" />
-      <workItem from="1572958013402" duration="4285000" />
+      <workItem from="1572958013402" duration="4544000" />
+      <workItem from="1573012778919" duration="286000" />
+      <workItem from="1573016548649" duration="7610000" />
+      <workItem from="1573044418907" duration="1036000" />
     </task>
     <servers />
   </component>
