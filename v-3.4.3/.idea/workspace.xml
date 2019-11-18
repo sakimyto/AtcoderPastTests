@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70c0be67-ca4d-47c1-bab0-d6437319fed4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ABC-B/ABC096B.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ABC-B/ABC097B.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ABC-A/ABC145A.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ABC-B/ABC145B.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ABC-C/ABC145C.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ABC-D/ABC145D.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ABC-E/ABC145E.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,11 +45,11 @@
       <recent name="$PROJECT_DIR$" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/ABC-E" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/ABC-A" />
       <recent name="$PROJECT_DIR$/ABC-D" />
       <recent name="$PROJECT_DIR$/ABC-C" />
-      <recent name="$PROJECT_DIR$/ABC-A" />
-      <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/AtCoderBeginnerContest" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -109,6 +113,19 @@
       <workItem from="1573431683563" duration="3846000" />
       <workItem from="1573518007677" duration="3685000" />
       <workItem from="1573552878255" duration="3883000" />
+      <workItem from="1573604210807" duration="520000" />
+      <workItem from="1573605288344" duration="7000" />
+      <workItem from="1573605941174" duration="4374000" />
+      <workItem from="1573614250739" duration="1394000" />
+      <workItem from="1573631472367" duration="467000" />
+      <workItem from="1573633821334" duration="995000" />
+      <workItem from="1573657316163" duration="18000" />
+      <workItem from="1573694370614" duration="226000" />
+      <workItem from="1573709441601" duration="1594000" />
+      <workItem from="1573717415005" duration="244000" />
+      <workItem from="1573743092763" duration="2181000" />
+      <workItem from="1573905580422" duration="4178000" />
+      <workItem from="1574037966067" duration="9332000" />
     </task>
     <servers />
   </component>
