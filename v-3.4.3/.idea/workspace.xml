@@ -2,8 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="70c0be67-ca4d-47c1-bab0-d6437319fed4" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/ABC-D/ABC130D.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ABC-D/ABC141D.py" beforeDir="false" afterPath="$PROJECT_DIR$/ABC-D/ABC141D.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,6 +18,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="HTML File" />
         <option value="Python Script" />
       </list>
     </option>
@@ -27,6 +29,7 @@
   <component name="ProjectId" id="1S35CcHJaOEVQnAAfXSGQzYLxOh" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/AtCoderBeginnerContest" />
@@ -144,7 +147,8 @@
       <workItem from="1573717415005" duration="244000" />
       <workItem from="1573743092763" duration="2181000" />
       <workItem from="1573905580422" duration="4178000" />
-      <workItem from="1574037966067" duration="18594000" />
+      <workItem from="1574037966067" duration="31583000" />
+      <workItem from="1574263500098" duration="653000" />
     </task>
     <servers />
   </component>
