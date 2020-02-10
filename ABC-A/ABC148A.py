@@ -1,6 +1,12 @@
 def resolve():
     a = int(input())
-    print(int(a ** 2))
+    b = int(input())
+    if a + b == 3:
+        print(3)
+    elif a + b == 4:
+        print(2)
+    else:
+        print(1)
 
 
 import sys
@@ -19,13 +25,15 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """2"""
-        output = """4"""
+        input = """3
+1"""
+        output = """2"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """100"""
-        output = """10000"""
+        input = """1
+2"""
+        output = """3"""
         self.assertIO(input, output)
 
 

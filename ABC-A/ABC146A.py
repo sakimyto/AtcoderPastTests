@@ -1,7 +1,22 @@
 def resolve():
-    a = int(input())
-    print(int(a ** 2))
+    s = input()
+    l = ['SUN', 'MON', 'TUE', 'WED', 'THU', 'FRI', 'SAT']
+    ans = 7 - l.index(s)
+    print(ans)
 
+
+# シンプルに考えるなら
+# S = input()
+# mp = {
+#     'SUN': 7,
+#     'MON': 6,
+#     'TUE': 5,
+#     'WED': 4,
+#     'THU': 3,
+#     'FRI': 2,
+#     'SAT': 1
+# }
+# print(mp[S])
 
 import sys
 from io import StringIO
@@ -19,13 +34,13 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """2"""
-        output = """4"""
+        input = """SAT"""
+        output = """1"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """100"""
-        output = """10000"""
+        input = """SUN"""
+        output = """7"""
         self.assertIO(input, output)
 
 

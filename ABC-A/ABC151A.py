@@ -1,6 +1,5 @@
 def resolve():
-    a = int(input())
-    print(int(a ** 2))
+    print(chr(ord(input()) + 1))
 
 
 import sys
@@ -19,13 +18,13 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """2"""
-        output = """4"""
+        input = """a"""
+        output = """b"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """100"""
-        output = """10000"""
+        input = """y"""
+        output = """z"""
         self.assertIO(input, output)
 
 

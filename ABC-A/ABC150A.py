@@ -1,12 +1,11 @@
 def resolve():
-    a = int(input())
-    print(int(a ** 2))
+    k, x = map(int, input().split())
+    print('Yes' if 500 * k >= x else 'No')
 
 
 import sys
 from io import StringIO
 import unittest
-
 
 class TestClass(unittest.TestCase):
     def assertIO(self, input, output):
@@ -19,15 +18,20 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """2"""
-        output = """4"""
+        input = """2 900"""
+        output = """Yes"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """100"""
-        output = """10000"""
+        input = """1 501"""
+        output = """No"""
         self.assertIO(input, output)
 
+    def test_入力例_3(self):
+        input = """4 2000"""
+        output = """Yes"""
+        self.assertIO(input, output)
 
 if __name__ == "__main__":
     unittest.main()
+

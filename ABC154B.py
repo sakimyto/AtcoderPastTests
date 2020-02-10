@@ -1,6 +1,6 @@
 def resolve():
-    a = int(input())
-    print(int(a ** 2))
+    S = input()
+    print('x' * len(S))
 
 
 import sys
@@ -19,13 +19,18 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """2"""
-        output = """4"""
+        input = """sardine"""
+        output = """xxxxxxx"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """100"""
-        output = """10000"""
+        input = """xxxx"""
+        output = """xxxx"""
+        self.assertIO(input, output)
+
+    def test_入力例_3(self):
+        input = """gone"""
+        output = """xxxx"""
         self.assertIO(input, output)
 
 

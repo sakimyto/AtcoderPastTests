@@ -1,6 +1,13 @@
 def resolve():
-    a = int(input())
-    print(int(a ** 2))
+    n = int(input())
+    s = input()
+    ai = ord('A')
+    ans = ''
+    for i in s:
+        ei = ord(i) - ai
+        ei = (ei + n) % 26
+        ans += chr(ei + ai)
+    print(ans)
 
 
 import sys
@@ -19,13 +26,21 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """2"""
-        output = """4"""
+        input = """2
+ABCXYZ"""
+        output = """CDEZAB"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """100"""
-        output = """10000"""
+        input = """0
+ABCXYZ"""
+        output = """ABCXYZ"""
+        self.assertIO(input, output)
+
+    def test_入力例_3(self):
+        input = """13
+ABCDEFGHIJKLMNOPQRSTUVWXYZ"""
+        output = """NOPQRSTUVWXYZABCDEFGHIJKLM"""
         self.assertIO(input, output)
 
 

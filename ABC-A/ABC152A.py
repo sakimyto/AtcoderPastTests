@@ -1,6 +1,6 @@
 def resolve():
-    a = int(input())
-    print(int(a ** 2))
+    n, m = map(int, input().split())
+    print('Yes' if n == m else 'No')
 
 
 import sys
@@ -19,13 +19,18 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """2"""
-        output = """4"""
+        input = """3 3"""
+        output = """Yes"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """100"""
-        output = """10000"""
+        input = """3 2"""
+        output = """No"""
+        self.assertIO(input, output)
+
+    def test_入力例_3(self):
+        input = """1 1"""
+        output = """Yes"""
         self.assertIO(input, output)
 
 

@@ -1,6 +1,11 @@
 def resolve():
-    a = int(input())
-    print(int(a ** 2))
+    s, t = map(str, input().split())
+    a, b = map(int, input().split())
+    u = input()
+    if u == s:
+        print(a - 1, b)
+    else:
+        print(a, b - 1)
 
 
 import sys
@@ -19,13 +24,17 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """2"""
-        output = """4"""
+        input = """red blue
+3 4
+red"""
+        output = """2 4"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """100"""
-        output = """10000"""
+        input = """red blue
+5 5
+blue"""
+        output = """5 4"""
         self.assertIO(input, output)
 
 

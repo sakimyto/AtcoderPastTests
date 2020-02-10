@@ -1,6 +1,7 @@
 def resolve():
-    a = int(input())
-    print(int(a ** 2))
+    n = int(input())
+    s = input()
+    print(s.count('ABC'))
 
 
 import sys
@@ -19,13 +20,21 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """2"""
-        output = """4"""
+        input = """10
+ZABCDBABCQ"""
+        output = """2"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """100"""
-        output = """10000"""
+        input = """19
+THREEONEFOURONEFIVE"""
+        output = """0"""
+        self.assertIO(input, output)
+
+    def test_入力例_3(self):
+        input = """33
+ABCCABCBABCCABACBCBBABCBCBCBCABCB"""
+        output = """5"""
         self.assertIO(input, output)
 
 

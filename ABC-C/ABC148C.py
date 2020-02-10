@@ -1,6 +1,7 @@
 def resolve():
-    a = int(input())
-    print(int(a ** 2))
+    from fractions import gcd
+    a, b = map(int, input().split())
+    print(int(a * b / gcd(a, b)))
 
 
 import sys
@@ -19,13 +20,18 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """2"""
-        output = """4"""
+        input = """2 3"""
+        output = """6"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """100"""
-        output = """10000"""
+        input = """123 456"""
+        output = """18696"""
+        self.assertIO(input, output)
+
+    def test_入力例_3(self):
+        input = """100000 99999"""
+        output = """9999900000"""
         self.assertIO(input, output)
 
 

@@ -1,6 +1,17 @@
 def resolve():
-    a = int(input())
-    print(int(a ** 2))
+    from itertools import accumulate
+    n = int(input())
+    n_list = []
+    m = 1
+    if n < 2 or n % 2 != 0:
+        print(0)
+    else:
+        arr = np.arange(1, n).reshape(3, 5)
+        while n > m:
+
+        n_list.append(i)
+        num = accumulate(n_list)
+        print(len(str(num)) - len(str(num).rstrip('0')))
 
 
 import sys
@@ -19,13 +30,18 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """2"""
-        output = """4"""
+        input = """12"""
+        output = """1"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """100"""
-        output = """10000"""
+        input = """5"""
+        output = """0"""
+        self.assertIO(input, output)
+
+    def test_入力例_3(self):
+        input = """1000000000000000000"""
+        output = """124999999999999995"""
         self.assertIO(input, output)
 
 

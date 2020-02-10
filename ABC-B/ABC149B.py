@@ -1,6 +1,9 @@
 def resolve():
-    a = int(input())
-    print(int(a ** 2))
+    a, b, k = map(int, input().split())
+    num = min(a, k)
+    a -= num
+    k -= num
+    print(a, max(b - k, 0))
 
 
 import sys
@@ -19,13 +22,13 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """2"""
-        output = """4"""
+        input = """2 3 3"""
+        output = """0 2"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """100"""
-        output = """10000"""
+        input = """500000000000 500000000000 1000000000000"""
+        output = """0 0"""
         self.assertIO(input, output)
 
 
