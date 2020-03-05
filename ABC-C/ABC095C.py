@@ -1,18 +1,12 @@
 def resolve():
     a, b, c, x, y = map(int, input().split())
-    if a + b < c * 2:
-        ans = a * x + b * y
+    if x == y:
+        ans = min(x * a + y * b, x * 2 * c)
+    elif x > y:
+        ans = min(x * a + y * b, x * 2 * c, y * 2 * c + (x - y) * a)
     else:
-        p1_cnt = max(x, y)
-        p1_price = p1_cnt * c * 2
-        p2_cnt = min(x, y)
-        if p2_cnt == x:
-            p2_price = p2_cnt * c * 2 + (y - x) * b
-        else:
-            p2_price = p2_cnt * c * 2 + (x - y) * a
-        ans = min(p1_price, p2_price)
+        ans = min(x * a + y * b, y * 2 * c, x * 2 * c + (y - x) * b)
     print(ans)
-
 
 import sys
 from io import StringIO

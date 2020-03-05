@@ -1,25 +1,6 @@
 def resolve():
-    # n = int(input())
-    # min_f = 10
-    # for i in range(1, n + 1):
-    #     if i ** 2 > n:
-    #         break
-    #     if n % i != 0:
-    #         continue
-    #     min_seq = max(len(str(i)), len(str(n // i)))
-    #     if min_seq < min_f:
-    #         min_f = min_seq
-    # print(min_f)
-
     n = int(input())
-    n_sqrt = int(n ** 0.5) + 1
-    ans = float('inf')
-    for i in range(1, n_sqrt + 1):
-        if n % i == 0:
-            j = int(n // i)
-            max_len = max(len(str(i)), len(str(j)))
-            ans = min(max_len, ans)
-    print(ans)
+    print(int(n // 2) if n % 2 == 0 else int(n // 2 + 1))
 
 
 import sys
@@ -38,18 +19,18 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """10000"""
+        input = """5"""
         output = """3"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """1000003"""
-        output = """7"""
+        input = """2"""
+        output = """1"""
         self.assertIO(input, output)
 
     def test_入力例_3(self):
-        input = """9876543210"""
-        output = """6"""
+        input = """100"""
+        output = """50"""
         self.assertIO(input, output)
 
 

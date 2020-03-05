@@ -1,16 +1,11 @@
 def resolve():
-    # n = int(input())
-    # s = input()
-    # print(s.count('ABC'))
-    #
+    a, b, k = map(int, input().split())
+    ans = []
+    for i in range(1, min(a, b) + 1):
+        if a % i == 0 and b % i == 0:
+            ans.append(i)
+    print(ans[-k])
 
-    n = int(input())
-    s = input()
-    cnt = 0
-    for i in range(n - 2):
-        if s[i:i + 3] == 'ABC':
-            cnt += 1
-    print(cnt)
 
 import sys
 from io import StringIO
@@ -28,21 +23,18 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """10
-ZABCDBABCQ"""
+        input = """8 12 2"""
         output = """2"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """19
-THREEONEFOURONEFIVE"""
-        output = """0"""
+        input = """100 50 4"""
+        output = """5"""
         self.assertIO(input, output)
 
     def test_入力例_3(self):
-        input = """33
-ABCCABCBABCCABACBCBBABCBCBCBCABCB"""
-        output = """5"""
+        input = """1 1 1"""
+        output = """1"""
         self.assertIO(input, output)
 
 
