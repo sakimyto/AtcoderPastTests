@@ -12,7 +12,7 @@
 - より良い実装があれば教えてもらえると喜びます
 
 ## Authors / 著者
-- **saki (@sakimyto) **
+- saki (@sakimyto)
 
 ## Acknowledgments / 謝辞
 - @YujiSoftware様
