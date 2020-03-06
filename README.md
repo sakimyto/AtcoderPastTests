@@ -1,4 +1,4 @@
-# AtcoderPastTests
+# atcoder-past-tests
 - 競技プラグラミング解いたものアーカイブ
 
 ## Getting Started / スタートガイド
