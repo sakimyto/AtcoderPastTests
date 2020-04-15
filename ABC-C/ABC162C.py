@@ -1,16 +1,26 @@
 def resolve():
+    # from math import gcd
+    # k = int(input())
+    # gcd_2 = []
+    # ans = 0
+    # for a in range(1, k + 1):
+    #     for b in range(1, k + 1):
+    #         gcd_2.append(gcd(a, b))
+    # for ab in gcd_2:
+    #     for c in range(1, k + 1):
+    #         ans += gcd(ab, c)
+    # print(ans)
+
+    # 上記の処理では下記と結局処理量かわらん感
     from math import gcd
     k = int(input())
-    gcd_2 = []
     ans = 0
     for a in range(1, k + 1):
         for b in range(1, k + 1):
-            gcd_2.append(gcd(a, b))
-    for ab in gcd_2:
-        for c in range(1, k + 1):
-            ans += gcd(ab, c)
+            ab = gcd(a, b)
+            for c in range(1, k + 1):
+                ans += gcd(ab, c)
     print(ans)
-
 
 import sys
 from io import StringIO
