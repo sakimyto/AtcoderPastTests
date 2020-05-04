@@ -1,6 +1,7 @@
 def resolve():
-    n = int(input())
-    if n ** 0.5
+    a, b, c = map(int, input().split())
+    print((a * b * c) % (10 ** 9 + 7))
+
 
 import sys
 from io import StringIO
@@ -18,18 +19,23 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例1(self):
-        input = """1"""
-        output = """1"""
+        input = """2 3 4"""
+        output = """24"""
         self.assertIO(input, output)
 
     def test_入力例2(self):
-        input = """981506241"""
-        output = """177"""
+        input = """10000 1000 100"""
+        output = """1000000000"""
         self.assertIO(input, output)
 
     def test_入力例3(self):
-        input = """390625"""
-        output = """25"""
+        input = """100000 1 100000"""
+        output = """999999937"""
+        self.assertIO(input, output)
+
+    def test_入力例4(self):
+        input = """1000000000 1000000000 1000000000"""
+        output = """999999664"""
         self.assertIO(input, output)
 
 
