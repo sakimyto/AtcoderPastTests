@@ -1,12 +1,17 @@
 def resolve():
     n = int(input())
+    a = list(map(int, input().split()))
     b = list(map(int, input().split()))
-    a = [0] * n
-    a[0] = b[0]
-    for i in range(n - 1):
-        a[i] = min(a[i], b[i])
-        a[i + 1] = b[i]
-    print(sum(a))
+    sum_a = sum(a)
+    for i in range(n):
+        tmp = min(a[i], b[i])
+        a[i] -= tmp
+        b[i] -= tmp
+        tmp = min(a[i + 1], b[i])
+        a[i + 1] -= tmp
+        b[i] -= tmp
+    ans = sum_a - sum(a)
+    print(ans)
 
 
 import sys
@@ -25,21 +30,24 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """3
-2 5"""
+        input = """2
+3 5 2
+4 5"""
         output = """9"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """2
-3"""
-        output = """6"""
+        input = """3
+5 6 3 8
+5 100 8"""
+        output = """22"""
         self.assertIO(input, output)
 
     def test_入力例_3(self):
-        input = """6
-0 153 10 10 23"""
-        output = """53"""
+        input = """2
+100 1 1
+1 100"""
+        output = """3"""
         self.assertIO(input, output)
 
 

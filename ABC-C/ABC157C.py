@@ -21,12 +21,13 @@ def resolve():
                 return '0'
             else:
                 ans[0] = '1'
+
         for i in range(1, n):
             if ans[i] == -1:
                 ans[i] = '0'
         return ''.join(ans)
 
-    n, m = list(map(int, input().split()))
+    n, m = map(int, input().split())
     print(solve(n, m))
 
 

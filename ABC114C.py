@@ -1,12 +1,15 @@
 def resolve():
     n = int(input())
-    b = list(map(int, input().split()))
-    a = [0] * n
-    a[0] = b[0]
-    for i in range(n - 1):
-        a[i] = min(a[i], b[i])
-        a[i + 1] = b[i]
-    print(sum(a))
+
+    def dfs(s):
+        if int(s) > n:
+            return 0
+        ret = 1 if all(s.count(c) > 0 for c in '753') else 0
+        for c in '753':
+            ret += dfs(s + c)
+        return ret
+
+    print(dfs('0'))
 
 
 import sys
@@ -25,21 +28,18 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """3
-2 5"""
-        output = """9"""
+        input = """575"""
+        output = """4"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """2
-3"""
-        output = """6"""
+        input = """3600"""
+        output = """13"""
         self.assertIO(input, output)
 
     def test_入力例_3(self):
-        input = """6
-0 153 10 10 23"""
-        output = """53"""
+        input = """999999999"""
+        output = """26484"""
         self.assertIO(input, output)
 
 

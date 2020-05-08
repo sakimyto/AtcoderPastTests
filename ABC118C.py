@@ -1,12 +1,16 @@
 def resolve():
     n = int(input())
-    b = list(map(int, input().split()))
-    a = [0] * n
-    a[0] = b[0]
-    for i in range(n - 1):
-        a[i] = min(a[i], b[i])
-        a[i + 1] = b[i]
-    print(sum(a))
+    a = list(map(int, input().split()))
+
+    def gcd(a, b):
+        while b != 0:
+            a, b = b, a % b
+        return a
+
+    ans = gcd(a[0], a[1])
+    for i in range(2, n):
+        ans = gcd(ans, a[i])
+    print(ans)
 
 
 import sys
@@ -25,21 +29,21 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """3
-2 5"""
-        output = """9"""
+        input = """4
+2 10 8 40"""
+        output = """2"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """2
-3"""
-        output = """6"""
+        input = """4
+5 13 8 1000000000"""
+        output = """1"""
         self.assertIO(input, output)
 
     def test_入力例_3(self):
-        input = """6
-0 153 10 10 23"""
-        output = """53"""
+        input = """3
+1000000000 1000000000 1000000000"""
+        output = """1000000000"""
         self.assertIO(input, output)
 
 

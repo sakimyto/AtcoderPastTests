@@ -1,12 +1,14 @@
 def resolve():
-    n = int(input())
-    b = list(map(int, input().split()))
-    a = [0] * n
-    a[0] = b[0]
-    for i in range(n - 1):
-        a[i] = min(a[i], b[i])
-        a[i + 1] = b[i]
-    print(sum(a))
+    n, m = map(int, input().split())
+    ppyy = [list(map(int, input().split())) for _ in range(m)]
+    order = [{}] * (n + 1)
+    cnt = [1] * (n + 1)
+    for p, y in sorted(ppyy, key=lambda x: x[1]):
+        order[p].update({y: cnt[p]})
+        cnt[p] += 1
+    for p, y in ppyy:
+        cnt[p] += 1
+        print(str(format(p, '06')) + str(format(order[p][y], '06')))
 
 
 import sys
@@ -25,21 +27,23 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """3
-2 5"""
-        output = """9"""
+        input = """2 3
+1 32
+2 63
+1 12"""
+        output = """000001000002
+000002000001
+000001000001"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """2
-3"""
-        output = """6"""
-        self.assertIO(input, output)
-
-    def test_入力例_3(self):
-        input = """6
-0 153 10 10 23"""
-        output = """53"""
+        input = """2 3
+2 55
+2 77
+2 99"""
+        output = """000002000001
+000002000002
+000002000003"""
         self.assertIO(input, output)
 
 

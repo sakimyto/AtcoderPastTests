@@ -1,12 +1,16 @@
 def resolve():
-    n = int(input())
-    b = list(map(int, input().split()))
-    a = [0] * n
-    a[0] = b[0]
-    for i in range(n - 1):
-        a[i] = min(a[i], b[i])
-        a[i + 1] = b[i]
-    print(sum(a))
+    n, q = map(int, input().split())
+    s = list(input())
+    lrs = [list(map(int, input().split())) for _ in range(q)]
+    d = [0] * n
+    cnt = 0
+    for i in range(n-1):
+        if s[i:i + 2] == ['A', 'C']:
+            cnt += 1
+        d[i+1] = cnt
+    for j in range(q):
+        l, r = lrs[j][0], lrs[j][1]
+        print(d[r - 1] - d[l - 1])
 
 
 import sys
@@ -25,21 +29,14 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """3
-2 5"""
-        output = """9"""
-        self.assertIO(input, output)
-
-    def test_入力例_2(self):
-        input = """2
+        input = """8 3
+ACACTACG
+3 7
+2 3
+1 8"""
+        output = """2
+0
 3"""
-        output = """6"""
-        self.assertIO(input, output)
-
-    def test_入力例_3(self):
-        input = """6
-0 153 10 10 23"""
-        output = """53"""
         self.assertIO(input, output)
 
 

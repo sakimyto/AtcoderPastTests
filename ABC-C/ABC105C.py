@@ -2,11 +2,15 @@ def resolve():
     n = int(input())
     ans = ''
     while n != 0:
-        ans = str(n % 2) + ans
-        n = -(n // 2)
-        print(ans)
-        print(n)
-    print(0 if ans == '' else ans)
+        if n % (-2) == 0:
+            ans = '0' + ans
+        else:
+            ans = '1' + ans
+            n -= 1
+        n /= -2
+    if ans == '':
+        ans = '0'
+    print(ans)
 
 
 import sys

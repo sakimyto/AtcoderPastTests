@@ -1,13 +1,13 @@
 def resolve():
     n = int(input())
-    b = list(map(int, input().split()))
-    a = [0] * n
-    a[0] = b[0]
-    for i in range(n - 1):
-        a[i] = min(a[i], b[i])
-        a[i + 1] = b[i]
-    print(sum(a))
-
+    aaa = [int(input()) for _ in range(n)]
+    max_a = sorted(aaa)[-1]
+    second_a = sorted(aaa)[-2]
+    for a in aaa:
+        if a == max_a:
+            print(second_a)
+        if a != max_a:
+            print(max_a)
 
 import sys
 from io import StringIO
@@ -26,20 +26,20 @@ class TestClass(unittest.TestCase):
 
     def test_入力例_1(self):
         input = """3
-2 5"""
-        output = """9"""
+1
+4
+3"""
+        output = """4
+3
+4"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
         input = """2
-3"""
-        output = """6"""
-        self.assertIO(input, output)
-
-    def test_入力例_3(self):
-        input = """6
-0 153 10 10 23"""
-        output = """53"""
+5
+5"""
+        output = """5
+5"""
         self.assertIO(input, output)
 
 

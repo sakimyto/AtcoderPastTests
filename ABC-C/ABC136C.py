@@ -1,12 +1,16 @@
 def resolve():
     n = int(input())
-    b = list(map(int, input().split()))
-    a = [0] * n
-    a[0] = b[0]
-    for i in range(n - 1):
-        a[i] = min(a[i], b[i])
-        a[i + 1] = b[i]
-    print(sum(a))
+    h = list(map(int, input().split()))
+    ans = 'Yes'
+    for i in range(n - 1, 0, -1):
+        if h[i] - h[i - 1] >= 0:
+            continue
+        elif h[i] - h[i - 1] == -1:
+            h[i - 1] -= 1
+        else:
+            ans = 'No'
+            break
+    print(ans)
 
 
 import sys
@@ -25,21 +29,27 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """3
-2 5"""
-        output = """9"""
+        input = """5
+1 2 1 1 3"""
+        output = """Yes"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """2
-3"""
-        output = """6"""
+        input = """4
+1 3 2 1"""
+        output = """No"""
         self.assertIO(input, output)
 
     def test_入力例_3(self):
-        input = """6
-0 153 10 10 23"""
-        output = """53"""
+        input = """5
+1 2 3 4 5"""
+        output = """Yes"""
+        self.assertIO(input, output)
+
+    def test_入力例_4(self):
+        input = """1
+1000000000"""
+        output = """Yes"""
         self.assertIO(input, output)
 
 
