@@ -1,25 +1,23 @@
 def resolve():
-    n, k, q = map(int, input().split())
-    a = list(input() for i in range(q))
-    dict = {}
-    for i in range(q):
-        if a[i] in dict.keys():
-            dict[a[i]] += 1
+    # しゃくとり法(累積和を二分探索でもいける)
+    n, k = map(int, input().split())
+    aaa = list(map(int, input().split()))
+    right = 1
+    cnt = 0
+    tmp = aaa[0]
+    for left in range(n):
+        while right < n and tmp < k:
+            tmp += aaa[right]
+            right += 1
+        if tmp < k:
+            break
         else:
-            dict[a[i]] = 1
-
-    for j in range(1, n+1):
-        if str(j) in dict.keys():
-            if k - q + int(dict[str(j)]) > 0:
-                print('Yes')
-            else:
-                print('No')
+            cnt += n - right + 1
+        if left == right:
+            right += 1
         else:
-            print('No')
-
-
-
-
+            tmp -= aaa[left]
+    print(cnt)
 
 
 import sys
@@ -38,60 +36,21 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """6 3 4
-3
-1
-3
-2"""
-        output = """No
-No
-Yes
-No
-No
-No"""
+        input = """4 10
+6 1 2 7"""
+        output = """2"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """6 5 4
-3
-1
-3
-2"""
-        output = """Yes
-Yes
-Yes
-Yes
-Yes
-Yes"""
+        input = """3 5
+3 3 3"""
+        output = """3"""
         self.assertIO(input, output)
 
     def test_入力例_3(self):
-        input = """10 13 15
-3
-1
-4
-1
-5
-9
-2
-6
-5
-3
-5
-8
-9
-7
-9"""
-        output = """No
-No
-No
-No
-Yes
-No
-No
-No
-Yes
-No"""
+        input = """10 53462
+103 35322 232 342 21099 90000 18843 9010 35221 19352"""
+        output = """36"""
         self.assertIO(input, output)
 
 

@@ -12,4 +12,4 @@ numpy = "*"
 python_version = "3.8"
 
 [scripts]
-test = "python"
+py = "python"
