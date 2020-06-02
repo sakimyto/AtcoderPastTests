@@ -9,6 +9,16 @@ def resolve():
         ans += i
     print(ans)
 
+    # シンプルにdecimal型でいけるらしい
+    # from decimal import Decimal
+    # a, b = map(Decimal, input().split())
+    # print(int(a * b))
+
+    # 100倍したりしてていねいに扱う方法も覚えておこう
+    # s = input().split()
+    # a = int(s[0])
+    # b, c = map(int, s[1].split('.')) if '.' in s[1] else map(int, [s[1], 0])
+    # print(a * b + a * c // 100)
 
 
 import sys
