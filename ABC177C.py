@@ -1,14 +1,18 @@
 def resolve():
-    k = int(input())
-    kkk = [0] * k
-    kkk[0] = 7 % k
-    ans = -1
-    for i in range(1, k):
-        kkk[i] = (kkk[i - 1] * 10 + 7) % k
-    for j in range(k):
-        if kkk[j] == 0:
-            ans = j + 1
-            break
+    n = int(input())
+    aaa = list(map(int, input().split()))
+    mod = 1000000007
+    c_sum = [0] * n
+    c_sum[n - 1] = aaa[n - 1]
+    ans = 0
+
+    for i in range(n - 2, 0, -1):
+        c_sum[i] = (c_sum[i + 1] + aaa[i]) % mod
+
+    for i in range(n - 1):
+        ans += aaa[i] * c_sum[i + 1] % mod
+        ans %= mod
+
     print(ans)
 
 
@@ -28,18 +32,15 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """101"""
-        output = """4"""
+        input = """3
+1 2 3"""
+        output = """11"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """2"""
-        output = """-1"""
-        self.assertIO(input, output)
-
-    def test_入力例_3(self):
-        input = """999983"""
-        output = """999982"""
+        input = """4
+141421356 17320508 22360679 244949"""
+        output = """437235829"""
         self.assertIO(input, output)
 
 

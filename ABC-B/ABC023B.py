@@ -1,22 +1,22 @@
 def resolve():
-n = int(input())
-s = input()
-tmp = 'b'
-ans = -1
-if s == tmp:
-    ans = 0
+    n = int(input())
+    s = input()
+    tmp = 'b'
+    ans = -1
+    if s == tmp:
+        ans = 0
 
-for i in range(1, n + 1):
-    if i % 3 == 1:
-        tmp = 'a' + tmp + 'c'
-    elif i % 3 == 2:
-        tmp = 'c' + tmp + 'a'
-    else:
-        tmp = 'b' + tmp + 'b'
-    if tmp == s:
-        ans = i
-        break
-print(ans)
+    for i in range(1, n + 1):
+        if i % 3 == 1:
+            tmp = 'a' + tmp + 'c'
+        elif i % 3 == 2:
+            tmp = 'c' + tmp + 'a'
+        else:
+            tmp = 'b' + tmp + 'b'
+        if tmp == s:
+            ans = i
+            break
+    print(ans)
 
 
 import sys

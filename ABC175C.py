@@ -1,14 +1,13 @@
 def resolve():
-    k = int(input())
-    kkk = [0] * k
-    kkk[0] = 7 % k
-    ans = -1
-    for i in range(1, k):
-        kkk[i] = (kkk[i - 1] * 10 + 7) % k
-    for j in range(k):
-        if kkk[j] == 0:
-            ans = j + 1
-            break
+    x, k, d = map(int, input().split())
+    x = abs(x)
+    if k * d < x:
+        ans = x - k * d
+    else:
+        if (k - x // d) % 2 == 0:
+            ans = x % d
+        else:
+            ans = abs(x % d - d)
     print(ans)
 
 
@@ -28,18 +27,23 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """101"""
-        output = """4"""
+        input = """6 2 4"""
+        output = """2"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """2"""
-        output = """-1"""
+        input = """7 4 3"""
+        output = """1"""
         self.assertIO(input, output)
 
     def test_入力例_3(self):
-        input = """999983"""
-        output = """999982"""
+        input = """10 1 2"""
+        output = """8"""
+        self.assertIO(input, output)
+
+    def test_入力例_4(self):
+        input = """1000000000000000 1000000000000000 1000000000000000"""
+        output = """1000000000000000"""
         self.assertIO(input, output)
 
 
