@@ -1,16 +1,17 @@
 def resolve():
     n = int(input())
-    cnt = 0
-    ans = 'No'
-    for _ in range(n):
-        d1, d2 = map(int, input().split())
-        if d1 == d2:
-            cnt += 1
-            if cnt >= 3:
-                ans = 'Yes'
-        else:
-            cnt = 0
-    print(ans)
+    xyh = [list(map(int, input().split())) for _ in range(n)]
+    xyh.sort(key=lambda x: x[2], reverse=True)
+    ans = []
+
+    for cx in range(101):
+        for cy in range(101):
+            x, y, h = xyh[0]
+            ch = h + abs(x - cx) + abs(y - cy)
+            if all([h == max(ch - abs(x - cx) - abs(y - cy), 0) for x, y, h in xyh[1:]]):
+                ans = [cx, cy, ch]
+                break
+    print(*ans, sep=' ')
 
 
 import sys
@@ -29,34 +30,27 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """5
-1 2
-6 6
-4 4
-3 3
-3 2"""
-        output = """Yes"""
+        input = """4
+2 3 5
+2 1 5
+1 2 5
+3 2 5"""
+        output = """2 2 6"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """5
-1 1
-2 2
-3 4
-5 5
-6 6"""
-        output = """No"""
+        input = """2
+0 0 100
+1 1 98"""
+        output = """0 0 100"""
         self.assertIO(input, output)
 
     def test_入力例_3(self):
-        input = """6
-1 1
-2 2
-3 3
-4 4
-5 5
-6 6"""
-        output = """Yes"""
+        input = """3
+99 1 191
+100 1 192
+99 0 192"""
+        output = """100 0 193"""
         self.assertIO(input, output)
 
 

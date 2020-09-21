@@ -5,19 +5,17 @@ def resolve():
 
     dp = [0] * n
     dp[0] = 1
-
     acc = 0
 
     for i in range(1, n):
-        for l, r in lr:
-            if i - l >= 0:
-                acc += dp[i - l]
+        for li, ri in lr:
+            if i - li >= 0:
+                acc += dp[i - li]
                 acc %= mod
-            if i - r - 1 >= 0:
-                acc -= dp[i - r - 1]
+            if i - ri - 1 >= 0:
+                acc -= dp[i - ri - 1]
                 acc %= mod
-            dp[i] = acc
-
+        dp[i] = acc
     print(dp[-1])
 
 
