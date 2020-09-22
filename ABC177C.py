@@ -1,19 +1,48 @@
 def resolve():
+    # n = int(input())
+    # aaa = list(map(int, input().split()))
+    # mod = 1000000007
+    # acc = [0] * n
+    # acc[n - 1] = aaa[n - 1]
+    # ans = 0
+    # for i in range(n - 2, 0, -1):
+    #     acc[i] = (acc[i + 1] + aaa[i]) % mod
+    # for i in range(n - 1):
+    #     ans += aaa[i] * acc[i + 1] % mod
+    #     ans %= mod
+    # print(ans)
+
+    # 全体からひく
     n = int(input())
     aaa = list(map(int, input().split()))
     mod = 1000000007
-    c_sum = [0] * n
-    c_sum[n - 1] = aaa[n - 1]
     ans = 0
-
-    for i in range(n - 2, 0, -1):
-        c_sum[i] = (c_sum[i + 1] + aaa[i]) % mod
-
-    for i in range(n - 1):
-        ans += aaa[i] * c_sum[i + 1] % mod
+    for a in aaa:
+        ans += a
         ans %= mod
+    ans **= 2
+    ans %= mod
+    for a in aaa:
+        ans -= a ** 2 % mod
+        if ans < 0:
+            ans += mod
+    ans *= pow(2, -1, mod)
+    ans %= mod
+    print(int(ans))
 
-    print(ans)
+    # 前から累積和
+    # n = int(input())
+    # aaa = list(map(int, input().split()))
+    # mod = 1000000007
+    # acc = [0] * n
+    # acc[0] = aaa[0]
+    # ans = 0
+    # for i in range(1, n):
+    #     acc[i] = (aaa[i] % mod + acc[i - 1] % mod) % mod
+    # for i in range(n):
+    #     ans += ((aaa[i] % mod) * (acc[n - 1] - acc[i])) % mod
+    #     ans %= mod
+    # print(ans)
 
 
 import sys
