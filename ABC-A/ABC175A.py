@@ -1,13 +1,24 @@
 def resolve():
-    s = input()
-    if s == 'RRR':
-        print(3)
-    elif s == 'RRS' or s == 'SRR':
-        print(2)
-    elif s == 'SSS':
-        print(0)
-    else:
-        print(1)
+    # s = input()
+    # if s == 'RRR':
+    #     print(3)
+    # elif s == 'RRS' or s == 'SRR':
+    #     print(2)
+    # elif s == 'SSS':
+    #     print(0)
+    # else:
+    #     print(1)
+
+    ss = input()
+    tmp = 0
+    ans = 0
+    for s in ss:
+        if s == 'R':
+            tmp += 1
+            ans = tmp
+        else:
+            tmp = 0
+    print(ans)
 
 
 import sys
