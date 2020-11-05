@@ -1,11 +1,9 @@
 def resolve():
-    import math
-    a, b, h, m = map(int, input().split())
-    theta_l = m / 60 * 360
-    theta_s = h * 30 + m / 60 * 30
-    theta_c = abs(theta_l - theta_s)
-    cos_c = math.cos(math.radians(theta_c))
-    print(math.sqrt(a ** 2 + b ** 2 - 2 * a * b * cos_c))
+    n = int(input())
+    xxx = list(map(lambda x: abs(int(x)), input().split()))
+    print(sum(xxx))
+    print(sum(x ** 2 for x in xxx) ** 0.5)
+    print(max(xxx))
 
 
 import sys
@@ -24,13 +22,19 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """3 4 9 0"""
-        output = """5.00000000000000000000"""
+        input = """2
+2 -1"""
+        output = """3
+2.236067977499790
+2"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """3 4 10 40"""
-        output = """4.56425719433005567605"""
+        input = """10
+3 -1 -4 1 -5 9 2 -6 5 -3"""
+        output = """39
+14.387494569938159
+9"""
         self.assertIO(input, output)
 
 
