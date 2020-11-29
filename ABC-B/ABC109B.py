@@ -1,12 +1,13 @@
 def resolve():
     n = int(input())
-    w = [input() for _ in range(n)]
+    www = [input() for _ in range(n)]
     ans = 'Yes'
-    if len(list(set(w))) != n:
+    if len(list(set(www))) != n:
         ans = 'No'
-    for i in range(1, n):
-        if w[i - 1][-1] != w[i][0]:
-            ans = 'No'
+    else:
+        for i in range(1, n):
+            if www[i][0] != www[i - 1][-1]:
+                ans = 'No'
     print(ans)
 
 

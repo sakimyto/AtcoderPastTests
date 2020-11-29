@@ -1,7 +1,10 @@
 def resolve():
     w, a, b = map(int, input().split())
-    print(abs(b - a) - w if abs(b - a) > w >= 0 else 0)
-
+    if abs(a - b) < w:
+        ans = 0
+    else:
+        ans = abs(a - b) - w
+    print(ans)
 
 import sys
 from io import StringIO
@@ -19,18 +22,18 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """3 2 6"""
-        output = """1"""
+        input = """6"""
+        output = """3"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """3 1 3"""
-        output = """0"""
+        input = """2"""
+        output = """2"""
         self.assertIO(input, output)
 
     def test_入力例_3(self):
-        input = """5 10 1"""
-        output = """4"""
+        input = """11"""
+        output = """5"""
         self.assertIO(input, output)
 
 

@@ -1,13 +1,16 @@
 def resolve():
     n = int(input())
-    www = [input() for _ in range(n)]
-    ans = 'Yes'
-    if len(list(set(www))) != n:
-        ans = 'No'
-    else:
-        for i in range(1, n):
-            if www[i][0] != www[i - 1][-1]:
-                ans = 'No'
+    aaa = list(map(int, input().split()))
+    ans = 0
+    cnt = 0
+    for i in range(2, max(aaa) + 1):
+        tmp = 0
+        for j in range(n):
+            if aaa[j] % i == 0:
+                tmp += 1
+        if tmp >= cnt:
+            cnt = tmp
+            ans = i
     print(ans)
 
 
@@ -27,47 +30,21 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """4
-hoge
-english
-hoge
-enigma"""
-        output = """No"""
+        input = """3
+3 12 7"""
+        output = """3"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """9
-basic
-c
-cpp
-php
-python
-nadesico
-ocaml
-lua
-assembly"""
-        output = """Yes"""
+        input = """5
+8 9 18 90 72"""
+        output = """9"""
         self.assertIO(input, output)
 
     def test_入力例_3(self):
-        input = """8
-a
-aa
-aaa
-aaaa
-aaaaa
-aaaaaa
-aaa
-aaaaaaa"""
-        output = """No"""
-        self.assertIO(input, output)
-
-    def test_入力例_4(self):
-        input = """3
-abc
-arc
-agc"""
-        output = """No"""
+        input = """5
+1000 1000 1000 1000 1000"""
+        output = """1000"""
         self.assertIO(input, output)
 
 

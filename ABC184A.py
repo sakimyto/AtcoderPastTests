@@ -1,7 +1,7 @@
 def resolve():
-    from decimal import Decimal, ROUND_DOWN
-    a, b = map(lambda x: Decimal(x), input().split())
-    print(Decimal(a * b).quantize(Decimal('1.'), rounding=ROUND_DOWN))
+    a, b = map(int, input().split())
+    c, d = map(int, input().split())
+    print(a * d - c * b)
 
 
 import sys
@@ -20,18 +20,21 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """198 1.10"""
-        output = """217"""
+        input = """1 2
+3 4"""
+        output = """-2"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """1 0.01"""
-        output = """0"""
+        input = """0 -1
+1 0"""
+        output = """1"""
         self.assertIO(input, output)
 
     def test_入力例_3(self):
-        input = """1000000000000000 9.99"""
-        output = """9990000000000000"""
+        input = """100 100
+100 100"""
+        output = """0"""
         self.assertIO(input, output)
 
 

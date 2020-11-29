@@ -1,10 +1,7 @@
 def resolve():
-    w, a, b = map(int, input().split())
-    if abs(a - b) < w:
-        ans = 0
-    else:
-        ans = abs(a - b) - w
-    print(ans)
+    sx, sy, gx, gy = map(int, input().split())
+    print((sx * gy + gx * sy) / (sy + gy))
+
 
 import sys
 from io import StringIO
@@ -22,18 +19,18 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """6"""
-        output = """3"""
+        input = """1 1 7 2"""
+        output = """3.0000000000"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """2"""
-        output = """2"""
+        input = """1 1 3 2"""
+        output = """1.6666666667"""
         self.assertIO(input, output)
 
     def test_入力例_3(self):
-        input = """11"""
-        output = """5"""
+        input = """-9 99 -999 9999"""
+        output = """-18.7058823529"""
         self.assertIO(input, output)
 
 

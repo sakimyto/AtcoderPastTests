@@ -20,6 +20,23 @@ def resolve():
         ans = max(ans, i + tmp - 1)
     print(ans)
 
+    # n, m, k = map(int, input().split())
+    # aaa = list(map(int, input().split()))
+    # bbb = list(map(int, input().split()))
+    # t, ans = sum(bbb), 0
+    # j = m
+    # for i in range(n + 1):
+    #     while j > 0 and t > k:
+    #         j -= 1
+    #         t -= bbb[j]
+    #     if t > k:
+    #         break
+    #     ans = max(ans, i + j)
+    #     if i == n:
+    #         break
+    #     t += aaa[i]
+    # print(ans)
+
 
 import sys
 from io import StringIO

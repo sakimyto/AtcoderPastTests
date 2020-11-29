@@ -1,16 +1,11 @@
 def resolve():
     import math
     a, b, h, m = map(int, input().split())
-    l_rad = m / 60 * 360
-    s_rad = h * 30 + m / 60 * 30
-    c_rad = abs(l_rad - s_rad) if abs(l_rad - s_rad) <= 180 else 360 - abs(l_rad - s_rad)
-    cos_c = math.cos(math.radians(c_rad))
-    if cos_c == 1:
-        print(abs(a - b))
-    elif cos_c == -1:
-        print(a + b)
-    else:
-        print(math.sqrt(a ** 2 + b ** 2 - 2 * a * b * cos_c))
+    theta_l = m / 60 * 360
+    theta_s = h * 30 + m / 60 * 30
+    theta_c = abs(theta_l - theta_s)
+    cos_c = math.cos(math.radians(theta_c))
+    print(math.sqrt(a ** 2 + b ** 2 - 2 * a * b * cos_c))
 
 
 import sys

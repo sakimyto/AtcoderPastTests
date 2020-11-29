@@ -1,12 +1,12 @@
 def resolve():
-    n = int(input())
-    alphabets = [chr(i) for i in range(ord('a'), ord('a') + 26)]
-    ans = ''
-    while n > 0:
-        n -= 1
-        ans += alphabets[n % 26]
-        n //= 26
-    print(ans[::-1])
+    n, x = map(int, input().split())
+    sss = input()
+    for s in sss:
+        if s == 'o':
+            x += 1
+        else:
+            x = max(0, x - 1)
+    print(x)
 
 
 import sys
@@ -25,18 +25,21 @@ class TestClass(unittest.TestCase):
         self.assertEqual(out, output)
 
     def test_入力例_1(self):
-        input = """2"""
-        output = """b"""
+        input = """3 0
+xox"""
+        output = """0"""
         self.assertIO(input, output)
 
     def test_入力例_2(self):
-        input = """27"""
-        output = """aa"""
+        input = """20 199999
+oooooooooxoooooooooo"""
+        output = """200017"""
         self.assertIO(input, output)
 
     def test_入力例_3(self):
-        input = """123456789"""
-        output = """jjddja"""
+        input = """20 10
+xxxxxxxxxxxxxxxxxxxx"""
+        output = """0"""
         self.assertIO(input, output)
 
 
